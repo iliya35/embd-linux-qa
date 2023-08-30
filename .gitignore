@@ -1,0 +1,5 @@
+*.pyc
+*.log
+.tmp_tests/
+*/node_modules/
+*/cypress/screenshots/*/*.png

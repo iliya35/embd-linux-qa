@@ -1,0 +1,40 @@
+{
+    "devices":
+    {
+        "Customer1": {
+            "device_ip": "192.168.1.101",
+            "device_username": "user",
+            "device_password": "password"
+        },
+        "Customer2": {
+            "device_ip": "192.168.1.102",
+            "device_username": "user",
+            "device_password": "password"
+        },        
+        "Customer3": {
+            "device_ip": "192.168.1.103",
+            "device_username": "user",
+            "device_password": "password"
+        }
+    },
+    "configs":
+    {
+        "Customer1": {
+            "ref_conf_name": "Customer1.conf",
+            "feature1": false,
+            "feature2": false
+        },
+        "Customer2": {
+            "ref_conf_name": "Customer2.conf",
+            "feature1": true,
+            "feature2": true
+
+        },        
+        "Customer3": {
+            "ref_conf_name": "Customer3.conf",
+            "feature1": true,
+            "feature2": false
+
+        }
+    }    
+}

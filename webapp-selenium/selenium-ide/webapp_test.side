@@ -1,0 +1,81 @@
+{
+  "id": "4575f926-2ac4-4b85-8e69-8e85c13ae4cd",
+  "version": "2.0",
+  "name": "webapp_test",
+  "url": "http://localhost:8181/",
+  "tests": [{
+    "id": "f218bd3b-0596-471e-a29c-685b8e5c24d6",
+    "name": "Authorization",
+    "commands": [{
+      "id": "16456c1e-ea19-46c7-8b44-e6b51e2b0561",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8181/#en:status",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37e5777d-8f48-4329-841a-70ff4ea8613d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1862x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62227231-5f50-4b65-9311-38c7efc62812",
+      "comment": "",
+      "command": "type",
+      "target": "name=user",
+      "targets": [
+        ["name=user", "name"],
+        ["css=.StyledBox-sc-13pk1d4-0:nth-child(1) > .StyledBox-sc-13pk1d4-0 > .StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 > .StyledTextInput-sc-1x30a0s-0", "css:finder"],
+        ["xpath=//input[@name='user']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div[2]/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "33fa11a0-73bb-4844-bb8d-19027ec6bb4a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.StyledBox-sc-13pk1d4-0:nth-child(2) > .StyledBox-sc-13pk1d4-0 > .StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 > .StyledTextInput-sc-1x30a0s-0", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div[2]/div/form/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "83415e88-8c40-455d-a8a8-c94e8fa36823",
+      "comment": "",
+      "command": "click",
+      "target": "css=.StyledButton-sc-323bzc-0",
+      "targets": [
+        ["css=.StyledButton-sc-323bzc-0", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/div[2]/div/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b9fcfb7-82a7-494a-8741-a4efe9ecce0f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f5b198b5-55c2-4858-bb49-2f98bd52968c",
+    "name": "Webapp",
+    "persistSession": true,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f218bd3b-0596-471e-a29c-685b8e5c24d6"]
+  }],
+  "urls": ["http://localhost:8181/"],
+  "plugins": []
+}

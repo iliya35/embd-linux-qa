@@ -1,0 +1,19 @@
+{
+  "name": "webapp-cypress-test",
+  "version": "1.0.0",
+  "description": "QA automating Webapp Testing using Cypress",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iliya35/embd-linux-qa.git"
+  },
+  "author": "Iliya Gorshkov",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.0.0",
+    "fs.promises": "^0.1.2"
+  }
+}
